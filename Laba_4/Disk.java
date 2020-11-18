@@ -1,4 +1,5 @@
 public class Disk {
+
     private final int sizeSector;
     private final int memoryCapacity;
     private final Cell[] cells;

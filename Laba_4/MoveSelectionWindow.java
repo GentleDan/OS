@@ -2,6 +2,7 @@ import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class MoveSelectionWindow extends JDialog {
+
     private final JTree tree;
     private DefaultMutableTreeNode selectedNode;
     private boolean accept;
