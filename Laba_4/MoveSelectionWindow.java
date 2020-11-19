@@ -11,20 +11,20 @@ public class MoveSelectionWindow extends JDialog {
         super(owner, true);
         setLayout(null);
         tree = new JTree(root);
-        setBounds(0, 0, 900, 900);
-        tree.setBounds(0, 0, 400, 500);
+        setBounds(0, 0, 500, 500);
+        tree.setBounds(0, 0, 300, 300);
         tree.addTreeSelectionListener(e1 -> selectedNode = (DefaultMutableTreeNode) tree.getLastSelectedPathComponent());
         add(tree);
 
         JButton acceptButton = new JButton("Accept");
-        acceptButton.setBounds(0, 500, 90, 90);
+        acceptButton.setBounds(0, 400, 80, 60);
         acceptButton.addActionListener(e -> {
             accept = true;
             dispose();
         });
         add(acceptButton);
         JButton cancelButton = new JButton("Cancel");
-        cancelButton.setBounds(0, 600, 90, 90);
+        cancelButton.setBounds(100, 400, 80, 60);
         cancelButton.addActionListener(e -> dispose());
         add(cancelButton);
         tree.updateUI();
